@@ -1,8 +1,8 @@
 # fast-filter
 
 Running a sequence of filters on a `TorsionDriveResultCollection` or other
-`openff-qcsubmit` result collection is painfully slow. This program breaks uses
-my very minimal Rust version of the
+`openff-qcsubmit` result collection is painfully slow. This program uses my very
+minimal Rust version of the
 [openff-toolkit](https://github.com/ntBre/openff-toolkit) to parse one of these
 collections from JSON, split it into individual entries, and run the filters on
 each entry in a separate Python instance in parallel.
