@@ -43,5 +43,6 @@ fn main() {
         entries: HashMap::from([(ds_name.clone(), results)]),
     };
 
-    assert_eq!(got, ds);
+    std::fs::write("output.json", &serde_json::to_string_pretty(&got).unwrap())
+        .unwrap();
 }

@@ -40,13 +40,13 @@ dataset = TorsionDriveResultCollection(entries=entries)
 # TODO pass in include_iodine
 elements = ["H", "C", "N", "O", "S", "P", "F", "Cl", "Br"]
 
-# dataset = dataset.filter(
-#     HydrogenBondFilter(method="baker-hubbard"),
-#     RecordStatusFilter(status=RecordStatusEnum.complete),
-#     ConnectivityFilter(tolerance=1.2),
-#     UnperceivableStereoFilter(),
-#     ElementFilter(allowed_elements=elements),
-#     ChargeCheckFilter(),
-# )
+dataset = dataset.filter(
+    HydrogenBondFilter(method="baker-hubbard"),
+    RecordStatusFilter(status=RecordStatusEnum.complete),
+    ConnectivityFilter(tolerance=1.2),
+    UnperceivableStereoFilter(),
+    ElementFilter(allowed_elements=elements),
+    ChargeCheckFilter(),
+)
 
-print(dataset.json(indent=2))
+print(dataset.json())
