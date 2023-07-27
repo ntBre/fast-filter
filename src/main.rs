@@ -17,6 +17,10 @@ struct Cli {
     /// automatically
     #[arg(short, long, default_value_t = 0)]
     threads: usize,
+
+    /// The name of the template Python script to run in parallel
+    #[arg(short, long)]
+    python_script: String,
 }
 
 fn main() {
@@ -29,7 +33,7 @@ fn main() {
 
     let ds = TorsionDriveResultCollection::parse_file(&cli.input).unwrap();
 
-    let got = filter(ds, cli.batch_size);
+    let got = filter(ds, &cli.python_script, cli.batch_size);
 
     // TODO I will probably want to collect the datasets themselves instead of
     // just entries and then combine them more intelligently out here.

@@ -5,6 +5,7 @@ use rayon::prelude::*;
 
 pub fn filter(
     ds: TorsionDriveResultCollection,
+    script: &str,
     batch_size: usize,
 ) -> TorsionDriveResultCollection {
     let mut results = Vec::new();
@@ -20,8 +21,7 @@ pub fn filter(
             .map(|entries| {
                 let map = HashMap::from([(name.to_owned(), entries)]);
                 let json = serde_json::to_string(&map).unwrap();
-                let script = include_str!("../scripts/filter_td.py")
-                    .replace("{json}", &json);
+                let script = script.replace("{json}", &json);
                 let mut cmd = Command::new("python");
                 let output = cmd.arg("-c").arg(&script).output().unwrap();
 
@@ -45,13 +45,16 @@ pub fn filter(
 
 #[cfg(test)]
 mod tests {
+    use std::fs::read_to_string;
+
     use super::*;
 
     #[test]
     fn round_trip() {
         let ds = TorsionDriveResultCollection::parse_file("testfiles/min.json")
             .unwrap();
-        let got = filter(ds.clone(), 12);
+        let script = read_to_string("scripts/filter_td.py").unwrap();
+        let got = filter(ds.clone(), &script, 12);
         assert_eq!(got, ds);
     }
 }
