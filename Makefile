@@ -1,5 +1,11 @@
+clippy:
+	cargo clippy --workspace --tests
+
 test:
 	cargo test
+
+install:
+	cargo install --path .
 
 flame:
 	CARGO_PROFILE_RELEASE_DEBUG=true \
