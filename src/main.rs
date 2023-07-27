@@ -1,24 +1,32 @@
 use std::{collections::HashMap, process::Command};
 
+use clap::Parser;
 use openff_toolkit::qcsubmit::results::TorsionDriveResultCollection;
 
 use rayon::prelude::*;
 
-fn main() {
-    let ds = TorsionDriveResultCollection::parse_file(
-        "/home/brent/omsf/projects/valence-fitting/02_curate-data/datasets/\
-	 filtered-sage-td.json",
-    )
-    .unwrap();
+#[derive(Parser)]
+#[command(author, version, about, long_about = None)]
+struct Cli {
+    /// Input file to operate on
+    input: String,
 
-    let batch_size = 8;
+    /// The number of entries to combine in one Python submission
+    #[arg(short, long, default_value_t = 8)]
+    batch_size: usize,
+}
+
+fn main() {
+    let cli = Cli::parse();
+
+    let ds = TorsionDriveResultCollection::parse_file(&cli.input).unwrap();
 
     let mut results = Vec::new();
     let ds_name = ds.entries.iter().next().unwrap().0;
     for (name, entries) in &ds.entries {
         results = entries
             .par_iter()
-            .chunks(batch_size)
+            .chunks(cli.batch_size)
             .map(|entries| {
                 let map = HashMap::from([(name.to_owned(), entries)]);
                 let json = serde_json::to_string(&map).unwrap();
