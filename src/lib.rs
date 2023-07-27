@@ -37,6 +37,10 @@ pub fn filter(
             .flatten()
             .collect();
     }
+
+    // TODO I will probably want to collect the datasets themselves instead of
+    // just entries and then combine them more intelligently out here.
+
     TorsionDriveResultCollection {
         entries: HashMap::from([(ds_name.clone(), results)]),
         ..ds

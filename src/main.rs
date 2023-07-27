@@ -35,9 +35,6 @@ fn main() {
 
     let got = filter(ds, &cli.python_script, cli.batch_size);
 
-    // TODO I will probably want to collect the datasets themselves instead of
-    // just entries and then combine them more intelligently out here.
-
     std::fs::write("output.json", &serde_json::to_string_pretty(&got).unwrap())
         .unwrap();
 }
