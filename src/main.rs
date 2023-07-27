@@ -21,6 +21,11 @@ struct Cli {
     /// The name of the template Python script to run in parallel
     #[arg(short, long)]
     python_script: String,
+
+    /// The optional name of the output file. Write the result to stdout if not
+    /// provided
+    #[arg(short, long)]
+    output_file: Option<String>,
 }
 
 fn main() {
@@ -35,6 +40,10 @@ fn main() {
 
     let got = filter(ds, &cli.python_script, cli.batch_size);
 
-    std::fs::write("output.json", &serde_json::to_string_pretty(&got).unwrap())
-        .unwrap();
+    let output = &serde_json::to_string_pretty(&got).unwrap();
+    if let Some(out) = cli.output_file {
+        std::fs::write(out, output).unwrap();
+    } else {
+        print!("{output}");
+    }
 }
