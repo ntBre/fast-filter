@@ -12,7 +12,7 @@ struct Cli {
     input: String,
 
     /// The number of entries to combine in one Python submission
-    #[arg(short, long, default_value_t = 8)]
+    #[arg(short, long, default_value_t = 12)]
     batch_size: usize,
 }
 
