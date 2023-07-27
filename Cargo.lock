@@ -277,6 +277,7 @@ checksum = "dd8b5dd2ae5ed71462c540258bedcb51965123ad7e7ccf4b9a8cafaa4a63576d"
 [[package]]
 name = "openff-toolkit"
 version = "0.1.0"
+source = "git+https://github.com/ntBre/openff-toolkit#0ab7e251f3e35665118818d18697d82fd5e22139"
 dependencies = [
  "quick-xml",
  "serde",

@@ -7,6 +7,6 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.3.19", features = ["derive"] }
-openff-toolkit = { path = "../openff-toolkit" }
+openff-toolkit = { git = "https://github.com/ntBre/openff-toolkit" }
 rayon = "1.7.0"
 serde_json = "1.0.104"
