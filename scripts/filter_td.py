@@ -34,8 +34,8 @@ class ChargeCheckFilter(ResultRecordFilter):
         return can_be_charged
 
 
-entries = dict(json.loads(r"""{json}"""))
-dataset = TorsionDriveResultCollection(entries=entries)
+d = json.loads(r"""{json}""")
+dataset = TorsionDriveResultCollection(entries=d["entries"], type=d["type"])
 
 # TODO pass in include_iodine
 elements = ["H", "C", "N", "O", "S", "P", "F", "Cl", "Br"]
