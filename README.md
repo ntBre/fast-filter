@@ -32,8 +32,8 @@ The Python script can be pretty much anything, but it needs to include a couple
 of key lines:
 
 ``` python
-entries = dict(json.loads(r"""{json}"""))
-dataset = TorsionDriveResultCollection(entries=entries)
+d = json.loads(r"""{json}""")
+dataset = TorsionDriveResultCollection(entries=d["entries"], type=d["type"])
 ...
 print(dataset.json())
 ```
