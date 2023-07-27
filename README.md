@@ -12,7 +12,7 @@ each entry in a separate Python instance in parallel.
 To install `fast-filter` into `~/.cargo/bin`, simply run the following command:
 
 ```shell
-cargo install --path .
+make install
 ```
 
 # Usage
