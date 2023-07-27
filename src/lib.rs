@@ -11,6 +11,13 @@ use rayon::prelude::*;
 /// entries = dict(json.loads(r"""{json}"""))
 /// dataset = TorsionDriveResultCollection(entries=entries)
 /// ```
+///
+/// as well as print the dataset in JSON format at the end to get it back into
+/// Rust:
+///
+/// ```python
+/// print(dataset.json())
+/// ```
 pub fn filter(
     ds: TorsionDriveResultCollection,
     script: &str,
