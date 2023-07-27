@@ -32,17 +32,18 @@ The Python script can be pretty much anything, but it needs to include a couple
 of key lines:
 
 ``` python
-d = json.loads(r"""{json}""")
-dataset = TorsionDriveResultCollection(entries=d["entries"], type=d["type"])
+dataset = TorsionDriveResultCollection(
+    entries=json.loads(r"""{json}""")["entries"]
+)
 ...
 print(dataset.json())
 ```
 
-The first pair of lines is how Rust passes the data subsets back to Python; it
-replaces the string `{json}` in the Python template file with a JSON literal. To
-ensure proper escaping, you should wrap this in a Python raw string (the
-`r"""..."""` above). The last line prints out the final dataset back in JSON
-format to be parsed back into Rust.
+The first line is how Rust passes the data subsets back to Python; it replaces
+the string `{json}` in the Python template file with a JSON literal. To ensure
+proper escaping, you should wrap this in a Python raw string (the `r"""..."""`
+above). The last line prints out the final dataset back in JSON format to be
+parsed back into Rust.
 
 # TODOs
 
