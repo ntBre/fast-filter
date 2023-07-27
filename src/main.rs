@@ -18,7 +18,7 @@ struct Cli {
     #[arg(short, long, default_value_t = 0)]
     threads: usize,
 
-    /// The name of the template Python script to run in parallel
+    /// The name of the template Python script to run in parallel.
     #[arg(short, long)]
     python_script: String,
 

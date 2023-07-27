@@ -3,6 +3,14 @@ use std::{collections::HashMap, process::Command};
 use openff_toolkit::qcsubmit::results::TorsionDriveResultCollection;
 use rayon::prelude::*;
 
+/// The JSON contents of each entry in the dataset are replaced for the string
+/// `{json}` in the template `script` file, so you need to include something
+/// like the following to access it.
+///
+/// ```python
+/// entries = dict(json.loads(r"""{json}"""))
+/// dataset = TorsionDriveResultCollection(entries=entries)
+/// ```
 pub fn filter(
     ds: TorsionDriveResultCollection,
     script: &str,
