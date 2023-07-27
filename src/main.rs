@@ -11,14 +11,16 @@ fn main() {
     )
     .unwrap();
 
+    let batch_size = 8;
+
     let mut results = Vec::new();
     let ds_name = ds.entries.iter().next().unwrap().0;
     for (name, entries) in &ds.entries {
         results = entries
             .par_iter()
-            .enumerate()
-            .map(|(i, entry)| {
-                let map = HashMap::from([(name.to_owned(), [entry])]);
+            .chunks(batch_size)
+            .map(|entries| {
+                let map = HashMap::from([(name.to_owned(), entries)]);
                 let json = serde_json::to_string(&map).unwrap();
                 let script = include_str!("../scripts/filter_td.py")
                     .replace("{json}", &json);
@@ -32,7 +34,6 @@ fn main() {
 
                 let ds: TorsionDriveResultCollection =
                     serde_json::from_slice(&output.stdout).unwrap();
-                eprintln!("finished {i}");
                 ds.entries.into_values().flatten().collect::<Vec<_>>()
             })
             .flatten()
