@@ -1,0 +1,212 @@
+{
+  "entries": {
+    "https://api.qcarchive.molssi.org:443/": [
+      {
+        "type": "torsion",
+        "record_id": "18535805",
+        "cmiles": "[H:10][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:12])[H:14])[C:7]([H:15])([H:16])[C:8]([H:17])([H:18])[F:9])[H:13])[H:11]",
+        "inchi_key": "VEEYKGRLIXCNCZ-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535806",
+        "cmiles": "[H:8][C:1]1([C:3]([C:2]([O:7]1)([H:10])[H:11])([C:4]([H:12])([H:13])[H:14])[C:6]([H:18])([H:19])[C:5]([H:15])([H:16])[H:17])[H:9]",
+        "inchi_key": "LXGCIBZDAQMLHO-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535807",
+        "cmiles": "[H:14][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:16])[H:18])[C@:11]([H:28])([C:7](=[O:13])[N:12]([C:9]([H:22])([H:23])[H:24])[C:10]([H:25])([H:26])[H:27])[C:8]([H:19])([H:20])[H:21])[H:17])[H:15]",
+        "inchi_key": "ULVVZAHNKGIBGY-SECBINFHNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535808",
+        "cmiles": "[H:15][c:1]1[c:3]([c:7]([c:11]([c:8]([c:4]1[H:18])[H:22])[C:14]([H:28])([c:12]2[c:9]([c:5]([c:2]([c:6]([c:10]2[H:24])[H:20])[H:16])[H:19])[H:23])[C:13]([H:25])([H:26])[H:27])[H:21])[H:17]",
+        "inchi_key": "BSZXAFXFTLXUFV-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535809",
+        "cmiles": "[H:11][C@@:3]([C:1]([H:6])([H:7])[H:8])([C:2]([H:9])([H:10])[O:4][H:12])[O:5][H:13]",
+        "inchi_key": "DNIAPMSPPWPWGF-GSVOUGTGNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535810",
+        "cmiles": "[H:12][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:14])[H:16])[S:11](=[O:9])(=[O:10])[C:8]([H:20])([H:21])[C:7]([H:17])([H:18])[H:19])[H:15])[H:13]",
+        "inchi_key": "VBQUDDWATQWCPP-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535811",
+        "cmiles": "[H:14][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:16])[H:18])[C:11]2([C:7]([C:9]([N+:13]([C:10]([C:8]2([H:21])[H:22])([H:25])[H:26])([H:30])[H:31])([H:23])[H:24])([H:19])[H:20])[C:12]([H:27])([H:28])[H:29])[H:17])[H:15]",
+        "inchi_key": "WMZXPOYYJULZMD-NMEKOBJZNA-O"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535812",
+        "cmiles": "[H:5][C:1]([H:6])([H:7])[C:3]([H:11])([H:12])[C:4]([H:13])([H:14])[C:2]([H:8])([H:9])[H:10]",
+        "inchi_key": "IJDNQMDRQITEOD-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18045311",
+        "cmiles": "[H:8][C:1]1([C:3]([C:2]([O:7]1)([H:10])[H:11])([C:4]([H:12])([H:13])[H:14])[C:6]([H:18])([H:19])[C:5]([H:15])([H:16])[H:17])[H:9]",
+        "inchi_key": "LXGCIBZDAQMLHO-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535813",
+        "cmiles": "[H:9][c:1]1[c:2]([o:8][c:3]([n:7]1)[C:6]([H:17])([C:4]([H:11])([H:12])[H:13])[C:5]([H:14])([H:15])[H:16])[H:10]",
+        "inchi_key": "LCIOLMRKUOHMSW-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535814",
+        "cmiles": "[H:12][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:14])[H:16])[C:7](=[O:11])[C:10]([H:23])([C:8]([H:17])([H:18])[H:19])[C:9]([H:20])([H:21])[H:22])[H:15])[H:13]",
+        "inchi_key": "BSMGLVDZZMBWQB-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535815",
+        "cmiles": "[H:12][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:14])[H:16])[C:10]2([C:8]([C:7]([C:9]2([H:21])[H:22])([H:17])[H:18])([H:19])[H:20])[C:11]([H:23])([H:24])[H:25])[H:15])[H:13]",
+        "inchi_key": "GRDSPXXZEBFXHZ-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18045313",
+        "cmiles": "[H:11][C@@:3]([C:1]([H:6])([H:7])[H:8])([C:2]([H:9])([H:10])[O:4][H:12])[O:5][H:13]",
+        "inchi_key": "DNIAPMSPPWPWGF-GSVOUGTGNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535817",
+        "cmiles": "[H:16][c:1]1[c:3]([c:7]([c:11]([c:8]([c:4]1[H:19])[H:23])[C@:14]([H:29])([C:13]([H:26])([H:27])[H:28])[O:15][c:12]2[c:9]([c:5]([c:2]([c:6]([c:10]2[H:25])[H:21])[H:17])[H:20])[H:24])[H:22])[H:18]",
+        "inchi_key": "MMDVBQJVKNNYLU-LBPRGKRZNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18045314",
+        "cmiles": "[H:10][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:12])[H:14])[C@:8]([H:18])([C:7]([H:15])([H:16])[H:17])[F:9])[H:13])[H:11]",
+        "inchi_key": "SRBHAKGUAAXXEX-ZETCQYMHNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18045316",
+        "cmiles": "[H:14][c:1]1[c:3]([c:7]([c:11]([c:8]([c:4]1[H:17])[H:21])[C:13]([H:24])([H:25])[c:12]2[c:9]([c:5]([c:2]([c:6]([c:10]2[H:23])[H:19])[H:15])[H:18])[H:22])[H:20])[H:16]",
+        "inchi_key": "CZZYITDELCSZES-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535819",
+        "cmiles": "[H:12][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:14])[H:16])[C:8]([H:20])([H:21])[S:11](=[O:9])(=[O:10])[C:7]([H:17])([H:18])[H:19])[H:15])[H:13]",
+        "inchi_key": "BEARMXYKACECDH-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535820",
+        "cmiles": "[H:8][c:1]1[c:2]([c:4]([o:7][c:3]1[H:10])[C:6]([H:14])([H:15])[C:5]([H:11])([H:12])[H:13])[H:9]",
+        "inchi_key": "HLPIHRDZBHXTFJ-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535821",
+        "cmiles": "[H:7]/[C:1](=[C:2](\\[C:4]([H:11])([H:12])[H:13])/[C:6]([H:17])([H:18])[C:5]([H:14])([H:15])[H:16])/[C:3]([H:8])([H:9])[H:10]",
+        "inchi_key": "BEQGRRJLJLVQAQ-XQRVVYSFNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535822",
+        "cmiles": "[H:11][c:1]1[c:2]([c:4]([n:9][c:5]([c:3]1[H:13])[C:6](=[O:10])[C:8]([H:18])([H:19])[C:7]([H:15])([H:16])[H:17])[H:14])[H:12]",
+        "inchi_key": "ZHAZHKPVEROFLH-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18045318",
+        "cmiles": "[H:11][c:1]1[c:2]([c:4]([n:8][c:5]([c:3]1[H:13])[N:9]([H:18])[C:6](=[O:10])[C:7]([H:15])([H:16])[H:17])[H:14])[H:12]",
+        "inchi_key": "QROKOTBWFZITJZ-BGGKNDAXNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535823",
+        "cmiles": "[H:11][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:13])[C:7](=[O:9])[C:8]([H:15])([H:16])[H:17])[O:10][H:18])[H:14])[H:12]",
+        "inchi_key": "JECYUBVRTQDVAT-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "18535824",
+        "cmiles": "[H:11][c:1]1[c:2]([c:4]([c:6]([c:5]([c:3]1[H:13])[C:7](=[O:10])[C:9]([H:18])([H:19])[H:20])[C:8]([H:15])([H:16])[H:17])[H:14])[H:12]",
+        "inchi_key": "YXWWHNCQZBVZPV-UHFFFAOYNA-N"
+      },
+      {
+        "type": "torsion",
+        "record_id": "35045068",
+        "cmiles": "[H:8][C:2]([H:9])([H:10])[N+:6](=[C:1]([N:5]([H:16])[N:4]([H:14])[H:15])[O:7][H:17])[C:3]([H:11])([H:12])[H:13]",
+        "inchi_key": "PGLFGNJUOPLFLV-CWKFSGEHNA-O"
+      }
+    ]
+  },
+  "provenance": {
+    "applied-filters": {
+      "HydrogenBondFilter-0": {
+        "method": "baker-hubbard"
+      },
+      "RecordStatusFilter-1": {
+        "status": "COMPLETE"
+      },
+      "ConnectivityFilter-2": {
+        "tolerance": 1.2
+      },
+      "UnperceivableStereoFilter-3": {
+        "toolkits": [
+          "openeye",
+          "rdkit"
+        ]
+      },
+      "ElementFilter-4": {
+        "allowed_elements": [
+          "H",
+          "C",
+          "N",
+          "O",
+          "S",
+          "P",
+          "F",
+          "Cl",
+          "Br"
+        ]
+      },
+      "HydrogenBondFilter-5": {
+        "method": "baker-hubbard"
+      },
+      "RecordStatusFilter-6": {
+        "status": "COMPLETE"
+      },
+      "ConnectivityFilter-7": {
+        "tolerance": 1.2
+      },
+      "UnperceivableStereoFilter-8": {
+        "toolkits": [
+          "openeye",
+          "rdkit"
+        ]
+      },
+      "ElementFilter-9": {
+        "allowed_elements": [
+          "H",
+          "C",
+          "N",
+          "O",
+          "S",
+          "P",
+          "F",
+          "Cl",
+          "Br"
+        ]
+      },
+      "ChargeCheckFilter-10": {}
+    }
+  },
+  "type": "TorsionDriveResultCollection"
+}
