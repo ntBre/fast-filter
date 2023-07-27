@@ -1,7 +1,7 @@
 use std::fs::read_to_string;
 
 use clap::Parser;
-use fast_filter::filter;
+use fast_filter::Filterer;
 use openff_toolkit::qcsubmit::results::TorsionDriveResultCollection;
 use rayon::ThreadPoolBuilder;
 
@@ -42,7 +42,7 @@ fn main() {
 
     let script = read_to_string(&cli.python_script).unwrap();
 
-    let got = filter(ds, &script, cli.batch_size);
+    let got = ds.filter(&script, cli.batch_size);
 
     let output = &serde_json::to_string_pretty(&got).unwrap();
     if let Some(out) = cli.output_file {
