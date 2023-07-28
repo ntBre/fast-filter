@@ -59,8 +59,7 @@ where
                     panic!("{}", String::from_utf8_lossy(&output.stderr));
                 }
 
-                let out = Self::from_python(&output.stdout);
-                out
+                Self::from_python(&output.stdout)
             },
         ));
 
