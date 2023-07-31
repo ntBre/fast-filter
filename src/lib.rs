@@ -86,7 +86,13 @@ impl Filterer for TorsionDriveResultCollection {
     }
 
     fn from_python(s: &[u8]) -> Self {
-        serde_json::from_slice(s).unwrap()
+        match serde_json::from_slice(s) {
+            Ok(s) => s,
+            Err(e) => panic!(
+                "failed to parse {} with {e}",
+                String::from_utf8_lossy(s)
+            ),
+        }
     }
 
     fn accumulate(self, mut results: Vec<Self>) -> Self {
