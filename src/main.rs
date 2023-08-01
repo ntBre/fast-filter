@@ -46,7 +46,10 @@ fn main() {
 
     let output = &serde_json::to_string_pretty(&got).unwrap();
     if let Some(out) = cli.output_file {
-        std::fs::write(out, output).unwrap();
+        std::fs::write(&out, output).unwrap_or_else(|e| {
+            eprintln!("failed to write output to {out} for {e}");
+            print!("{output}");
+        });
     } else {
         print!("{output}");
     }
